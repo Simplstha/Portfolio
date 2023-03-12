@@ -5,9 +5,6 @@ from wtforms import StringField, SubmitField, EmailField
 from wtforms.validators import DataRequired
 import os
 import smtplib
-from dotenv import load_dotenv
-
-load_dotenv("E:/Python/EnvironmentVariables/.env")
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.getenv("AppSecretKey")
