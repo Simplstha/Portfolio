@@ -37,7 +37,7 @@ def home():
                 msg=f"Subject:Feedback from My Portfolio \n\nName = {name}\nEmail = {email}\nMessage = {message}"
             )
         return redirect(url_for("home"))
-    return render_template("templates/index.html", form=form)
+    return render_template("index.html", form=form)
 
 
 if __name__ == "__main__":
